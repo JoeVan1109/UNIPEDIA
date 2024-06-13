@@ -1,0 +1,26 @@
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/popup";
+@import "./components/card";
+
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/sidebar";
+
+@import "./pages/cgv";
+@import "./pages/connexion";
+@import "./pages/contact";
+@import "./pages/home";
+@import "./pages/shop-peluche";
+@import "./pages/shop-the";
+@import "./pages/shopt-vaiselle";
+@import "./pages/apropos.scss";
+@import "./pages/encyclopedie.scss";
+
+@import "./utils/mixins";
+@import "./utils/variables";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

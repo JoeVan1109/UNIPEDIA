@@ -1,5 +1,8 @@
 @import "./base/typography";
 
+@import "./utils/mixins";
+@import "./utils/variables";
+
 @import "./components/buttons";
 @import "./components/popup";
 @import "./components/card";
@@ -20,7 +23,4 @@
 @import "./pages/apropos.scss";
 @import "./pages/encyclopedie.scss";
 
-@import "./utils/mixins";
-@import "./utils/variables";
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";

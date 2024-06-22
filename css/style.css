@@ -5,41 +5,41 @@
 /* font-family: "Handlee", cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
 /* font-family: "Patrick Hand SC", cursive; */
-.grid-bloc-1 {
+.grid-bloc-intro {
   box-sizing: border-box;
   margin: 30px 25px 25px 25px;
 }
-.grid-bloc-1 .card-1 {
-  width: 90%;
+.grid-bloc-intro .card-1 {
+  max-width: 300px;
   background-color: #FFE6E6;
   padding: 20px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.grid-bloc-1 .card-1 .title-card {
+.grid-bloc-intro .card-1 .title-card {
   margin-bottom: 20px;
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 20px;
   color: #2B0D73;
 }
-.grid-bloc-1 .card-1 .text-card {
+.grid-bloc-intro .card-1 .text-card {
   margin-bottom: 35px;
   text-align: center;
   font-family: "Patrick Hand SC", cursive;
   color: #7469B6;
 }
-.grid-bloc-1 .card-1 .footer-lien {
+.grid-bloc-intro .card-1 .footer-lien {
   display: flex;
   justify-content: end;
 }
-.grid-bloc-1 .card-1 .footer-lien .lien-card {
+.grid-bloc-intro .card-1 .footer-lien .lien-card {
   text-decoration: none;
   font-family: "Patrick Hand SC", cursive;
   color: #2B0D73;
 }
 
-.bloc-2 .artboard {
+.bloc-encyclo .artboard {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,6 +52,7 @@
   position: relative;
   height: 16rem;
   width: 90%;
+  max-width: 500px;
   transform-style: preserve-3d; /* Nécessaire pour l'effet 3D */
   transition: transform 0.8s ease; /* Transition pour l'effet de bascule */
   cursor: pointer; /* rendre la card cliquable */
@@ -60,7 +61,7 @@
 .card__side {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 200px;
   backface-visibility: hidden; /* Cache la face arrière lors de la rotation */
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -73,12 +74,16 @@
   background-repeat: no-repeat;
   transform: rotateY(0);
   border-radius: 10px;
+  max-height: 246px;
 }
 
 .card__side--back {
   background-color: white;
   transform: rotateY(180deg); /* Initialement cachée */
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card.is-flipped {
@@ -100,7 +105,13 @@
   margin-bottom: 8rem;
 }
 
-.grid-bloc-1 {
+.text-unicorn-card {
+  color: #7469B6;
+  font-family: "Patrick Hand SC", cursive;
+  padding: 20px;
+}
+
+.grid-bloc-intro {
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
@@ -178,33 +189,39 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-body .bloc-1 {
+body .bloc-intro {
   margin: 10px;
 }
-body .bloc-1 .title-bloc-1 {
+body .bloc-intro .title-bloc-1 {
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 22px;
+  color: #2B0D73;
+  margin: 50px 0 30px 0;
+}
+body .bloc-intro .title-bloc-1 .logo-texte {
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 100;
+}
+body .bloc-intro .text-bloc-1 {
+  text-align: center;
+  font-family: "Patrick Hand SC", cursive;
+  color: #7469B6;
+}
+body .grid-bloc-intro .ligne {
+  margin-top: 25px;
+  width: 90%;
+  border: 2px solid #E1AFD1;
+}
+body .bloc-encyclo .sous-title {
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 20px;
   color: #2B0D73;
   margin: 50px 0 30px 0;
 }
-body .bloc-1 .title-bloc-1 .logo-texte {
-  font-family: "Cherry Bomb One", system-ui;
-  font-weight: 100;
-}
-body .bloc-1 .text-bloc-1 {
-  text-align: center;
-  font-family: "Patrick Hand SC", cursive;
-  color: #7469B6;
-}
-body .grid-bloc-1 .ligne {
-  margin-top: 25px;
-  width: 100%;
-  border: 2px solid #E1AFD1;
-}
-body .bloc-2 .ligne {
-  margin-top: 25px;
-  width: 100%;
+body .bloc-encyclo .ligne {
+  width: 90%;
   border: 2px solid #E1AFD1;
 }
 

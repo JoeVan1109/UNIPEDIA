@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
 
 
-    .bloc-1{
+    .bloc-intro{
 
         margin: 10px;
     
@@ -12,7 +12,7 @@ body {
             text-align: center;
     
             font-family: "Handlee", cursive;
-            font-size: 20px;
+            font-size: 22px;
     
             color: $blue;
     
@@ -36,23 +36,33 @@ body {
         
     }
     
-    .grid-bloc-1{
+    .grid-bloc-intro{
 
         .ligne{
 
             margin-top: 25px;
         
-            width: 100%;
+            width: 90%;
             border: 2px solid $dark-pink;
         }
     }
     
-    .bloc-2{
+    .bloc-encyclo{
+
+        .sous-title{
+            text-align: center;
+    
+            font-family: "Handlee", cursive;
+            font-size: 20px;
+    
+            color: $blue;
+    
+            margin: 50px 0 30px 0;
+        }
         .ligne{
-            
-            margin-top: 25px;
+
         
-            width: 100%;
+            width: 90%;
             border: 2px solid $dark-pink;
         }
     }

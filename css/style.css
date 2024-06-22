@@ -1,8 +1,111 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap");
+/* font-family: "Cherry Bomb One", system-ui; */
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 /* font-family: "Handlee", cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
 /* font-family: "Patrick Hand SC", cursive; */
+.grid-bloc-1 {
+  box-sizing: border-box;
+  margin: 30px 25px 25px 25px;
+}
+.grid-bloc-1 .card-1 {
+  width: 90%;
+  background-color: #FFE6E6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.grid-bloc-1 .card-1 .title-card {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 20px;
+  color: #2B0D73;
+}
+.grid-bloc-1 .card-1 .text-card {
+  margin-bottom: 35px;
+  text-align: center;
+  font-family: "Patrick Hand SC", cursive;
+  color: #7469B6;
+}
+.grid-bloc-1 .card-1 .footer-lien {
+  display: flex;
+  justify-content: end;
+}
+.grid-bloc-1 .card-1 .footer-lien .lien-card {
+  text-decoration: none;
+  font-family: "Patrick Hand SC", cursive;
+  color: #2B0D73;
+}
+
+.bloc-2 .artboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  perspective: 200rem; /* Perspective pour l'effet 3D */
+}
+
+.card {
+  position: relative;
+  height: 16rem;
+  width: 90%;
+  transform-style: preserve-3d; /* Nécessaire pour l'effet 3D */
+  transition: transform 0.8s ease; /* Transition pour l'effet de bascule */
+  cursor: pointer; /* rendre la card cliquable */
+}
+
+.card__side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Cache la face arrière lors de la rotation */
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card__side--front {
+  background-image: url("../../asset/img-accueil/encyclo-licorne.JPG");
+  background-size: 100%; /* Ajuste la taille de l'image pour couvrir toute la zone */
+  background-position: center; /* Centre l'image dans la zone */
+  background-repeat: no-repeat;
+  transform: rotateY(0);
+  border-radius: 10px;
+}
+
+.card__side--back {
+  background-color: white;
+  transform: rotateY(180deg); /* Initialement cachée */
+  border-radius: 10px;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg); /* Bascule de 180 degrés lorsqu'elle est cliquée */
+}
+
+/* Thème et boîte de thème */
+.card__theme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.card__theme-box {
+  color: white;
+  margin-bottom: 8rem;
+}
+
+.grid-bloc-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  place-items: center;
+}
 .sidenav {
   font-family: "Patrick Hand SC", cursive;
   height: 100%;
@@ -11,7 +114,7 @@
   z-index: 1;
   top: 0;
   left: -250px;
-  background-color: #FFE6E6;
+  background-color: #DDCFE8;
   padding-top: 60px;
   transition: left 0.5s ease;
 }
@@ -61,16 +164,48 @@
   z-index: -1;
   top: 0;
   width: 100%;
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
   background-color: #FFE6E6;
 }
 .bandeau .logo-bandeau {
-  width: 20%;
-  padding: 20px 0 20px 38%;
+  max-width: 130px;
+  padding: 20px 0 20px 0;
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
+}
+body .bloc-1 {
+  margin: 10px;
+}
+body .bloc-1 .title-bloc-1 {
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 20px;
+  color: #2B0D73;
+  margin: 50px 0 30px 0;
+}
+body .bloc-1 .title-bloc-1 .logo-texte {
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 100;
+}
+body .bloc-1 .text-bloc-1 {
+  text-align: center;
+  font-family: "Patrick Hand SC", cursive;
+  color: #7469B6;
+}
+body .grid-bloc-1 .ligne {
+  margin-top: 25px;
+  width: 100%;
+  border: 2px solid #E1AFD1;
+}
+body .bloc-2 .ligne {
+  margin-top: 25px;
+  width: 100%;
+  border: 2px solid #E1AFD1;
 }
 
 /*# sourceMappingURL=style.css.map */

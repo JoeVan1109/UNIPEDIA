@@ -1,4 +1,63 @@
 body {
     margin: 0;
     overflow-x: hidden;
+
+
+    .bloc-1{
+
+        margin: 10px;
+    
+        .title-bloc-1{
+    
+            text-align: center;
+    
+            font-family: "Handlee", cursive;
+            font-size: 20px;
+    
+            color: $blue;
+    
+            margin: 50px 0 30px 0;
+    
+            .logo-texte{
+                font-family: "Cherry Bomb One", system-ui;
+                font-weight: 100;
+            }
+        }
+        
+        .text-bloc-1{
+    
+            text-align: center;
+    
+            font-family: "Patrick Hand SC", cursive;
+    
+            color: $dark-violet;
+        } 
+
+        
+    }
+    
+    .grid-bloc-1{
+
+        .ligne{
+
+            margin-top: 25px;
+        
+            width: 100%;
+            border: 2px solid $dark-pink;
+        }
+    }
+    
+    .bloc-2{
+        .ligne{
+            
+            margin-top: 25px;
+        
+            width: 100%;
+            border: 2px solid $dark-pink;
+        }
+    }
+    
 }
+
+
+

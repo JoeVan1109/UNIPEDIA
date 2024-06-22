@@ -32,6 +32,10 @@
 
 - Logo : Cherry Bomb One
 
+    - @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+    - font-family: "Cherry Bomb One", system-ui;
+
+
 
 
 - Titre : Handlee
@@ -44,7 +48,7 @@
 
   - `@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');`
 
-`font-family: "Patrick Hand SC", cursive;`
+  -`font-family: "Patrick Hand SC", cursive;`
 
 
 ## BOX-SHADOW

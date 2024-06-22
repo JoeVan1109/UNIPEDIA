@@ -10,7 +10,7 @@
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: $pink;
+    background-color: $light-violet;
     padding-top: 60px;
     transition: left 0.5s ease;
 
@@ -69,15 +69,17 @@
     top: 0;
 
     width: 100%;
+    max-height: 100px;
 
-
+    display: flex;
+    justify-content: center;
 
     background-color: $pink;
 
     .logo-bandeau {
-        width: 20%;
+        max-width: 130px;
 
-        padding: 20px 0 20px 38%;
+        padding: 20px 0 20px 0;
     }
 }
 

@@ -1,0 +1,25 @@
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {
+            @content;
+        } // < 600px
+    } 
+    @else if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {
+            @content;
+        } // < 900px
+    }
+}

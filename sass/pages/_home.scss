@@ -7,7 +7,7 @@ body {
 
         margin: 10px;
     
-        .title-bloc-1{
+        .title-bloc-intro{
     
             text-align: center;
     
@@ -24,7 +24,7 @@ body {
             }
         }
         
-        .text-bloc-1{
+        .text-bloc-intro{
     
             text-align: center;
     
@@ -49,7 +49,7 @@ body {
     
     .bloc-encyclo{
 
-        .sous-title{
+        .sous-title-bloc-encyclo{
             text-align: center;
     
             font-family: "Handlee", cursive;
@@ -67,6 +67,19 @@ body {
         }
     }
     
+    .bloc-product {
+
+        .sous-title-bloc-product {
+            text-align: center;
+    
+            font-family: "Handlee", cursive;
+            font-size: 20px;
+    
+            color: $blue;
+    
+            margin: 50px 0 30px 0;
+        }
+    }
 }
 
 

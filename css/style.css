@@ -17,8 +17,8 @@
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
+  font-family: "Handlee", cursive;
+  font-size: 20px;
   height: 48px;
   justify-content: center;
   line-height: 24px;
@@ -132,18 +132,74 @@
 .bloc-product .card-product .title-product {
   text-align: center;
   font-family: "Handlee", cursive;
-  font-size: 20px;
+  font-size: 25px;
   color: #2B0D73;
   margin: 50px 0 30px 0;
 }
 .bloc-product .card-product .img-product {
   width: 100%;
+  border-radius: 10px;
 }
 .bloc-product .card-product .text-product {
   color: #AD88C6;
   font-family: "Patrick Hand SC", cursive;
   padding: 20px;
   text-align: center;
+}
+
+.bloc-temoignages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bloc-temoignages .title-temoignage {
+  font-family: "Handlee", cursive;
+  color: #2B0D73;
+  text-align: center;
+  font-size: 18px;
+  margin: 25px;
+}
+.bloc-temoignages .card-temoignage-1 {
+  margin: 0 0 50px 0;
+  width: 90%;
+}
+.bloc-temoignages .card-temoignage-1 .text-temoignage {
+  color: #AD88C6;
+  font-family: "Patrick Hand SC", cursive;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.bloc-temoignages .card-temoignage-1 .img-temoignage-1 {
+  border-radius: 10px;
+  width: 100%;
+}
+.bloc-temoignages .card-temoignage-2 {
+  margin: 0 0 50px 0;
+  width: 90%;
+}
+.bloc-temoignages .card-temoignage-2 .text-temoignage {
+  color: #AD88C6;
+  font-family: "Patrick Hand SC", cursive;
+  padding: 20px;
+  text-align: center;
+}
+.bloc-temoignages .card-temoignage-2 .img-temoignage-2 {
+  border-radius: 10px;
+  width: 100%;
+}
+.bloc-temoignages .card-temoignage-3 {
+  margin: 0 0 50px 0;
+  width: 90%;
+}
+.bloc-temoignages .card-temoignage-3 .text-temoignage {
+  color: #AD88C6;
+  font-family: "Patrick Hand SC", cursive;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.bloc-temoignages .card-temoignage-3 .img-temoignage-3 {
+  border-radius: 10px;
+  width: 100%;
 }
 
 .grid-bloc-intro {
@@ -230,7 +286,7 @@ body .bloc-intro {
 body .bloc-intro .title-bloc-intro {
   text-align: center;
   font-family: "Handlee", cursive;
-  font-size: 22px;
+  font-size: 30px;
   color: #2B0D73;
   margin: 50px 0 30px 0;
 }
@@ -251,7 +307,7 @@ body .grid-bloc-intro .ligne {
 body .bloc-encyclo .sous-title-bloc-encyclo {
   text-align: center;
   font-family: "Handlee", cursive;
-  font-size: 20px;
+  font-size: 30px;
   color: #2B0D73;
   margin: 50px 0 30px 0;
 }
@@ -259,12 +315,39 @@ body .bloc-encyclo .ligne {
   width: 90%;
   border: 2px solid #E1AFD1;
 }
-body .bloc-product .sous-title-bloc-product {
+body .sous-title-bloc-product {
   text-align: center;
   font-family: "Handlee", cursive;
-  font-size: 20px;
+  font-size: 30px;
   color: #2B0D73;
   margin: 50px 0 30px 0;
+}
+body .sous-title-bloc-temoignages {
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 30px;
+  color: #2B0D73;
+  margin: 50px 0 30px 0;
+}
+body .phrase-accroche {
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 25px;
+  color: #2B0D73;
+  margin: 50px 0 60px 0;
+}
+body .ligne-temoignage {
+  margin-top: 25px;
+  width: 90%;
+  border: 1px solid #AD88C6;
+}
+body .fleche-up {
+  margin: 30px;
+  display: flex;
+  justify-content: end;
+}
+body .fleche-up .fleche-up-img {
+  width: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

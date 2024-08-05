@@ -12,7 +12,7 @@ body {
             text-align: center;
     
             font-family: "Handlee", cursive;
-            font-size: 22px;
+            font-size: 30px;
     
             color: $blue;
     
@@ -53,7 +53,7 @@ body {
             text-align: center;
     
             font-family: "Handlee", cursive;
-            font-size: 20px;
+            font-size: 30px;
     
             color: $blue;
     
@@ -66,20 +66,59 @@ body {
             border: 2px solid $dark-pink;
         }
     }
-    
-    .bloc-product {
+
 
         .sous-title-bloc-product {
             text-align: center;
     
             font-family: "Handlee", cursive;
-            font-size: 20px;
+            font-size: 30px;
     
             color: $blue;
     
             margin: 50px 0 30px 0;
         }
-    }
+
+        .sous-title-bloc-temoignages {
+            text-align: center;
+    
+            font-family: "Handlee", cursive;
+            font-size: 30px;
+    
+            color: $blue;
+    
+            margin: 50px 0 30px 0;
+        }
+
+        .phrase-accroche {
+            text-align: center;
+    
+            font-family: "Handlee", cursive;
+            font-size: 25px;
+    
+            color: $blue;
+    
+            margin: 50px 0 60px 0;
+        }
+
+        .ligne-temoignage {
+            margin-top: 25px;
+        
+            width: 90%;
+            border: 1px solid $violet;
+        }
+        
+        .fleche-up {
+
+            margin: 30px;
+
+            display: flex;
+            justify-content: end;
+
+            .fleche-up-img {
+                width: 60px;
+            }
+        }
 }
 
 

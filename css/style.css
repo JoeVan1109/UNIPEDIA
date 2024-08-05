@@ -202,6 +202,39 @@
   width: 100%;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 25px;
+  background-color: #AD88C6;
+  color: white;
+  font-family: "Patrick Hand SC", cursive;
+}
+.footer .footer-left {
+  text-align: center;
+}
+.footer .footer-left .footer-title {
+  margin-bottom: 15px;
+}
+.footer .footer-left .footer-tel {
+  margin: 10px 0 10px 0;
+}
+.footer .footer-img-logo-mobile .footer-logo {
+  max-width: 160px;
+}
+.footer .footer-img-logo-desktop .footer-logo {
+  max-width: 130px;
+  display: none;
+}
+.footer .footer-right .footer-right-network {
+  text-align: center;
+  margin: 25px 0 15px 0;
+}
+.footer .footer-right .footer-right-network .icone-network {
+  width: 30px;
+}
 .grid-bloc-intro {
   display: grid;
   grid-template-columns: 1fr;

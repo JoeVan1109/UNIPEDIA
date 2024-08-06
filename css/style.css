@@ -307,60 +307,63 @@
   gap: 25px;
   place-items: center;
 }
-.sidenav {
+header {
+  /* Icône burger */
+}
+header .sidenav {
   font-family: "Patrick Hand SC", cursive;
   height: 100%;
   width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: -250px;
+  right: -250px;
   background-color: #DDCFE8;
   padding-top: 60px;
-  transition: left 0.5s ease;
+  transition: right 0.5s ease;
 }
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+header .sidenav a {
+  margin: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #2B0D73;
   display: block;
   transition: 0.3s;
 }
-.sidenav ul {
+header .sidenav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.sidenav .close {
+header .sidenav .close {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
 }
-
-.sidenav a:hover {
+header .sidenav a:hover {
   color: #111;
 }
-
-.sidenav.active {
-  left: 0;
+header .sidenav.active {
+  right: 0;
 }
-
-/* Icône burger */
-.burger-icon {
-  margin: 10px;
+header .burger-icon {
+  background-color: transparent;
+  border: none;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
-.burger-icon span {
+header .burger-icon span {
   display: block;
   width: 35px;
   height: 5px;
   border-radius: 10px;
   background-color: #2B0D73;
-  margin: 8px;
+  margin: 5px;
 }
-
-.bandeau {
+header .bandeau {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -370,91 +373,135 @@
   justify-content: center;
   background-color: #FFE6E6;
 }
-.bandeau .logo-bandeau {
-  max-width: 130px;
-  padding: 20px 0 20px 0;
+header .bandeau .logo-bandeau {
+  width: 130px;
+  margin: 20px;
+}
+@media screen and (min-width: 1200px) {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  header .bandeau {
+    display: flex;
+  }
+  header .bandeau .logo-bandeau {
+    width: 200px;
+    margin: 20px;
+  }
+  header .sidenav {
+    width: auto;
+    position: static;
+    height: 60px;
+    right: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 30px 0 0;
+    background-color: transparent;
+  }
+  header .sidenav a {
+    color: #AD88C6;
+    font-size: 20px;
+  }
+  header .sidenav .close {
+    visibility: hidden;
+    position: relative;
+    right: 25%;
+  }
+  header .sidenav.active {
+    right: 350px;
+  }
+  header .burger-icon {
+    visibility: hidden;
+  }
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
 }
-body .bloc-intro {
+body .container {
+  position: relative;
+  z-index: -2;
+  top: 90px;
+}
+body .container .bloc-intro {
   margin: 10px;
 }
-body .bloc-intro .title-bloc-intro {
+body .container .bloc-intro .title-bloc-intro {
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 30px;
   color: #2B0D73;
   margin: 50px 0 30px 0;
 }
-body .bloc-intro .title-bloc-intro .logo-texte {
+body .container .bloc-intro .title-bloc-intro .logo-texte {
   font-family: "Cherry Bomb One", system-ui;
   font-weight: 100;
 }
-body .bloc-intro .text-bloc-intro {
+body .container .bloc-intro .text-bloc-intro {
   text-align: center;
   font-family: "Patrick Hand SC", cursive;
   color: #7469B6;
 }
-body .grid-bloc-intro .ligne {
+body .container .grid-bloc-intro .ligne {
   margin-top: 25px;
   width: 90%;
   border: 2px solid #E1AFD1;
 }
-body .bloc-encyclo .sous-title-bloc-encyclo {
+body .container .bloc-encyclo .sous-title-bloc-encyclo {
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 30px;
   color: #2B0D73;
   margin: 50px 0 30px 0;
 }
-body .bloc-encyclo .ligne {
+body .container .bloc-encyclo .ligne {
   width: 90%;
   border: 2px solid #E1AFD1;
 }
-body .sous-title-bloc-product {
+body .container .sous-title-bloc-product {
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 30px;
   color: #2B0D73;
   margin: 50px 0 30px 0;
 }
-body .bloc-product .ligne {
+body .container .bloc-product .ligne {
   margin-top: 50px;
   width: 90%;
   border: 2px solid #E1AFD1;
 }
-body .sous-title-bloc-temoignages {
+body .container .sous-title-bloc-temoignages {
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 30px;
   color: #2B0D73;
   margin: 90px 0 30px 0;
 }
-body .phrase-accroche {
+body .container .phrase-accroche {
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 25px;
   color: #2B0D73;
   margin: 50px 0 60px 0;
 }
-body .ligne-temoignage {
+body .container .ligne-temoignage {
   margin-bottom: 25px;
   width: 90%;
   border: 1px solid #AD88C6;
 }
-body .fleche-up {
+body .container .fleche-up {
   margin: 30px;
   display: flex;
   justify-content: end;
 }
-body .fleche-up .fleche-up-img {
+body .container .fleche-up .fleche-up-img {
   width: 60px;
 }
 @media screen and (min-width: 768px) {
-  body .ligne-temoignage {
+  body .container .ligne-temoignage {
     width: 70%;
   }
 }

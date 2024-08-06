@@ -64,34 +64,45 @@
   box-sizing: border-box;
   margin: 30px 25px 25px 25px;
 }
-.grid-bloc-intro .card-1 {
-  max-width: 300px;
+.grid-bloc-intro .card-intro {
+  width: 300px;
   background-color: #FFE6E6;
   padding: 20px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.grid-bloc-intro .card-1 .title-card {
+.grid-bloc-intro .card-intro .title-card {
   margin-bottom: 20px;
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 20px;
   color: #2B0D73;
 }
-.grid-bloc-intro .card-1 .text-card {
+.grid-bloc-intro .card-intro .text-card {
   margin-bottom: 35px;
   text-align: center;
   font-family: "Patrick Hand SC", cursive;
   color: #AD88C6;
 }
-.grid-bloc-intro .card-1 .footer-lien {
+.grid-bloc-intro .card-intro .footer-lien {
   display: flex;
   justify-content: end;
 }
-.grid-bloc-intro .card-1 .footer-lien .lien-card {
+.grid-bloc-intro .card-intro .footer-lien .lien-card {
   text-decoration: none;
   font-family: "Patrick Hand SC", cursive;
   color: #2B0D73;
+}
+@media screen and (min-width: 768px) {
+  .grid-bloc-intro .card-intro {
+    width: 600px;
+  }
+  .grid-bloc-intro .card-intro .title-card {
+    font-size: 25px;
+  }
+  .grid-bloc-intro .card-intro .text-card {
+    font-size: 20px;
+  }
 }
 
 .bloc-encyclo {
@@ -103,7 +114,7 @@
   align-items: center;
 }
 .bloc-encyclo .card-encyclo {
-  max-width: 300px;
+  width: 300px;
   margin-bottom: 45px;
   border-radius: 10px;
 }
@@ -117,6 +128,14 @@
   padding: 20px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .bloc-encyclo .card-encyclo {
+    width: 600px;
+  }
+  .bloc-encyclo .card-encyclo .text-unicorn-card {
+    font-size: 20px;
+  }
+}
 
 .bloc-product {
   box-sizing: border-box;
@@ -127,7 +146,7 @@
   align-items: center;
 }
 .bloc-product .card-product {
-  max-width: 300px;
+  width: 300px;
 }
 .bloc-product .card-product .title-product {
   text-align: center;
@@ -145,6 +164,14 @@
   font-family: "Patrick Hand SC", cursive;
   padding: 20px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .bloc-product .card-product {
+    width: 600px;
+  }
+  .bloc-product .card-product .text-product {
+    font-size: 20px;
+  }
 }
 
 .bloc-temoignages {
@@ -200,6 +227,26 @@
 .bloc-temoignages .card-temoignage-3 .img-temoignage-3 {
   border-radius: 10px;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .bloc-temoignages .card-temoignage-1 {
+    width: 600px;
+  }
+  .bloc-temoignages .card-temoignage-1 .text-temoignage {
+    font-size: 20px;
+  }
+  .bloc-temoignages .card-temoignage-2 {
+    width: 600px;
+  }
+  .bloc-temoignages .card-temoignage-2 .text-temoignage {
+    font-size: 20px;
+  }
+  .bloc-temoignages .card-temoignage-3 {
+    width: 600px;
+  }
+  .bloc-temoignages .card-temoignage-3 .text-temoignage {
+    font-size: 20px;
+  }
 }
 
 .footer {
@@ -374,12 +421,17 @@ body .sous-title-bloc-product {
   color: #2B0D73;
   margin: 50px 0 30px 0;
 }
+body .bloc-product .ligne {
+  margin-top: 50px;
+  width: 90%;
+  border: 2px solid #E1AFD1;
+}
 body .sous-title-bloc-temoignages {
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 30px;
   color: #2B0D73;
-  margin: 50px 0 30px 0;
+  margin: 90px 0 30px 0;
 }
 body .phrase-accroche {
   text-align: center;
@@ -389,7 +441,7 @@ body .phrase-accroche {
   margin: 50px 0 60px 0;
 }
 body .ligne-temoignage {
-  margin-top: 25px;
+  margin-bottom: 25px;
   width: 90%;
   border: 1px solid #AD88C6;
 }
@@ -400,6 +452,11 @@ body .fleche-up {
 }
 body .fleche-up .fleche-up-img {
   width: 60px;
+}
+@media screen and (min-width: 768px) {
+  body .ligne-temoignage {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,11 +5,9 @@
 
     margin: 30px 25px 25px 25px;
     
-    .card-1{
+    .card-intro{
 
-        
-
-        max-width: 300px;
+        width: 300px;
         
         background-color: $pink;
 
@@ -54,7 +52,19 @@
         }
     }
         
-    
+    @media screen and (min-width: 768px) {
+        .card-intro {
+            width: 600px;
+
+            .title-card {
+                font-size: 25px;
+            }
+
+            .text-card {
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 .bloc-encyclo {
@@ -69,7 +79,7 @@
 
     .card-encyclo {
     
-        max-width: 300px;
+        width: 300px;
 
         margin-bottom: 45px;
 
@@ -96,6 +106,16 @@
         }
         
     }
+
+    @media screen and (min-width: 768px) {
+        .card-encyclo {
+            width: 600px;
+
+            .text-unicorn-card {
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 .bloc-product {
@@ -110,7 +130,7 @@
 
     .card-product {
 
-        max-width: 300px;
+        width: 300px;
 
         .title-product {
             text-align: center;
@@ -137,6 +157,16 @@
             padding: 20px;
 
             text-align: center;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .card-product {
+            width: 600px;
+
+            .text-product {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -228,6 +258,32 @@
 
         }
 
+    }
+
+    @media screen and (min-width: 768px) {
+        .card-temoignage-1 {
+            width: 600px;
+
+            .text-temoignage {
+                font-size: 20px;
+            }
+        }
+
+        .card-temoignage-2 {
+            width: 600px;
+
+            .text-temoignage {
+                font-size: 20px;
+            }
+        }
+
+        .card-temoignage-3 {
+            width: 600px;
+
+            .text-temoignage {
+                font-size: 20px;
+            }
+        }
     }
 }
 

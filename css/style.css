@@ -221,12 +221,14 @@
 .footer .footer-left .footer-tel {
   margin: 10px 0 10px 0;
 }
-.footer .footer-img-logo-mobile .footer-logo {
-  max-width: 160px;
+.footer .footer-img-logo-mobile .footer-logo-mobile {
+  width: 160px;
 }
-.footer .footer-img-logo-desktop .footer-logo {
-  max-width: 130px;
+.footer .footer-img-logo-desktop {
   display: none;
+}
+.footer .footer-img-logo-desktop .footer-logo-desktop {
+  width: 190px;
 }
 .footer .footer-right .footer-right-network {
   text-align: center;
@@ -235,6 +237,23 @@
 .footer .footer-right .footer-right-network .icone-network {
   width: 30px;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .footer-img-logo-mobile {
+    display: none;
+  }
+  .footer .footer-img-logo-desktop {
+    display: block;
+  }
+  .footer .footer-right .footer-right-network {
+    margin-top: 0;
+  }
+}
+
 .grid-bloc-intro {
   display: grid;
   grid-template-columns: 1fr;

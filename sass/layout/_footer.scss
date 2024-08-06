@@ -37,9 +37,9 @@
 
     .footer-img-logo-mobile {
 
-        .footer-logo {
+        .footer-logo-mobile {
 
-            max-width: 160px;
+            width: 160px;
 
             
 
@@ -49,11 +49,12 @@
 
     .footer-img-logo-desktop {
 
-        .footer-logo {
 
-            max-width: 130px;
+        display: none;
 
-            display: none;
+        .footer-logo-desktop {
+
+            width: 190px;
 
         }
 
@@ -85,4 +86,42 @@
 
     }
 
+    @media screen and (min-width: 768px) {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        
+
+        .footer-img-logo-mobile {
+
+            display: none;
+
+            .footer-logo {
+    
+                
+                
+    
+            }
+    
+        }
+
+        .footer-img-logo-desktop {
+
+            display: block;
+
+        }
+
+        .footer-right {
+
+            .footer-right-network {
+
+                margin-top: 0;
+                
+        }
+
+        }
+        
+    }
 }

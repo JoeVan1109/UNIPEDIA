@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+
+    .container {
+
+        .title-propos {
+            font-family: "Handlee", cursive;
+            font-size: 30px;
+
+            text-align: center;
+
+            color: $blue;
+
+            margin: 60px 0 40px 0;
+        }
+
+
+        .ligne-entreprise{
+
+            margin: 5%;
+        
+            width: 90%;
+            border: 2px solid $dark-pink;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-.grid-bloc-intro{
+.grid-bloc-intro {
 
     display: grid;
     grid-template-columns: 1fr;
@@ -6,8 +6,10 @@
 
     place-items: center;
 
-    .card-1{
+    @media screen and (min-width: 1200px) {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
 
     }
 }
-

@@ -65,6 +65,14 @@
             }
         }
     }
+
+    @media screen and (min-width: 1200px) {
+
+        .card-intro {
+            width: 300px;
+        }
+
+    }
 }
 
 .bloc-encyclo {
@@ -113,6 +121,33 @@
 
             .text-unicorn-card {
                 font-size: 20px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        
+        .card-encyclo {
+            width: 80%;
+
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            
+
+            .img-encyclo {
+                width: 50%;
+            }
+
+            .text-encyclo {
+
+                .sous-title-bloc-encyclo {
+                    font-size: 50px;
+                }
+
+                .text-unicorn-card {
+                    text-align: start;
+                }
             }
         }
     }

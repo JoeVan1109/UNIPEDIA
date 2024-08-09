@@ -104,6 +104,11 @@
     font-size: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .grid-bloc-intro .card-intro {
+    width: 300px;
+  }
+}
 
 .bloc-encyclo {
   box-sizing: border-box;
@@ -134,6 +139,23 @@
   }
   .bloc-encyclo .card-encyclo .text-unicorn-card {
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bloc-encyclo .card-encyclo {
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .bloc-encyclo .card-encyclo .img-encyclo {
+    width: 50%;
+  }
+  .bloc-encyclo .card-encyclo .text-encyclo .sous-title-bloc-encyclo {
+    font-size: 50px;
+  }
+  .bloc-encyclo .card-encyclo .text-encyclo .text-unicorn-card {
+    text-align: start;
   }
 }
 
@@ -307,6 +329,13 @@
   gap: 25px;
   place-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .grid-bloc-intro {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
+}
+
 header {
   /* Icône burger */
 }
@@ -442,11 +471,13 @@ body .container .bloc-intro .title-bloc-intro .logo-texte {
 }
 body .container .bloc-intro .text-bloc-intro {
   text-align: center;
+  margin-bottom: 40px;
   font-family: "Patrick Hand SC", cursive;
+  font-size: 20px;
   color: #7469B6;
 }
-body .container .grid-bloc-intro .ligne {
-  margin-top: 25px;
+body .container .ligne-intro {
+  margin: 5%;
   width: 90%;
   border: 2px solid #E1AFD1;
 }
@@ -457,7 +488,8 @@ body .container .bloc-encyclo .sous-title-bloc-encyclo {
   color: #2B0D73;
   margin: 50px 0 30px 0;
 }
-body .container .bloc-encyclo .ligne {
+body .container .ligne-encyclo {
+  margin: 5%;
   width: 90%;
   border: 2px solid #E1AFD1;
 }
@@ -468,8 +500,8 @@ body .container .sous-title-bloc-product {
   color: #2B0D73;
   margin: 50px 0 30px 0;
 }
-body .container .bloc-product .ligne {
-  margin-top: 50px;
+body .container .ligne-product {
+  margin: 5%;
   width: 90%;
   border: 2px solid #E1AFD1;
 }
@@ -488,9 +520,9 @@ body .container .phrase-accroche {
   margin: 50px 0 60px 0;
 }
 body .container .ligne-temoignage {
-  margin-bottom: 25px;
+  margin: 5%;
   width: 90%;
-  border: 1px solid #AD88C6;
+  border: 2px solid #AD88C6;
 }
 body .container .fleche-up {
   margin: 30px;
@@ -503,6 +535,14 @@ body .container .fleche-up .fleche-up-img {
 @media screen and (min-width: 768px) {
   body .container .ligne-temoignage {
     width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body .container .bloc-intro .title-bloc-intro {
+    font-size: 50px;
+  }
+  body .container .bloc-intro .text-bloc-intro {
+    font-size: 30px;
   }
 }
 

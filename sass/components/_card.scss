@@ -167,16 +167,7 @@
 
         width: 300px;
 
-        .title-product {
-            text-align: center;
-    
-            font-family: "Handlee", cursive;
-            font-size: 25px;
-    
-            color: $blue;
-    
-            margin: 50px 0 30px 0;
-        }
+        margin-top: 70px;
 
         .img-product {
             width: 100%;
@@ -184,26 +175,100 @@
             border-radius: 10px;
         }
 
-        .text-product {
-            color: $violet;
-        
-            font-family: "Patrick Hand SC", cursive; 
-        
-            padding: 20px;
 
-            text-align: center;
+        .detail-product {
+
+            .title-product {
+                text-align: center;
+        
+                font-family: "Handlee", cursive;
+                font-size: 25px;
+        
+                color: $blue;
+        
+                margin-top: 25px;
+            }
+    
+            
+            .text-product {
+                color: $violet;
+            
+                font-family: "Patrick Hand SC", cursive; 
+            
+                padding: 20px;
+    
+                text-align: center;
+            }
         }
     }
 
     @media screen and (min-width: 768px) {
         .card-product {
             width: 600px;
+            
 
-            .text-product {
-                font-size: 20px;
+            .detail-product {
+
+                .title-product {
+                    font-size: 30px;
+                }
+
+                .text-product {
+                    font-size: 25px;
+                
+                }
             }
+            
         }
     }
+
+    @media screen and (min-width: 1200px) {
+
+        .card-product {
+
+            width: 80%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-product {
+                width: 50%;
+
+                margin: 50px;
+            }
+
+            .detail-product {
+                
+                width: 50%;
+
+                .title-product {
+                    font-size: 40px;
+                }
+
+                .text-product {
+                    text-align: start;
+                }
+            }
+        }
+
+        .card-peluche {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .card-vaiselle {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card-the {
+            display: flex;
+            flex-direction: row-reverse;
+
+        }
+    }
+
 }
 
 .bloc-temoignages {

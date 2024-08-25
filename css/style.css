@@ -422,6 +422,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  box-sizing: border-box;
   height: auto;
   padding: 25px;
   background-color: #AD88C6;
@@ -589,6 +593,58 @@ header .bandeau .logo-bandeau {
   header .burger-icon {
     visibility: hidden;
   }
+}
+
+.container .title-contact {
+  margin: 70px 0 40px 0;
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 25px;
+  color: #2B0D73;
+}
+.container .bloc-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.container .bloc-contact .form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.container .bloc-contact .form-contact .input-email {
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #DDCFE8;
+  padding-left: 10px;
+  font-family: "Patrick Hand SC", cursive;
+}
+.container .bloc-contact .form-contact .input-file {
+  height: 30px;
+  margin: 40px 0 40px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #DDCFE8;
+  padding: 10px 0 0 10px;
+  font-family: "Patrick Hand SC", cursive;
+  color: grey;
+}
+.container .bloc-contact .form-contact .input-message {
+  height: 100px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #DDCFE8;
+  padding: 10px 0 0 10px;
+  font-family: "Patrick Hand SC", cursive;
+}
+.container .bloc-contact .form-contact .button {
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #DDCFE8;
 }
 
 body {

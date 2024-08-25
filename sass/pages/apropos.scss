@@ -27,7 +27,7 @@ body {
                 border-radius: 10px;
             }
         
-            .entreprise-text {
+            .entreprise-bloc-text {
         
                 margin: 20px;
         
@@ -70,13 +70,28 @@ body {
 
                 margin: 50px;
 
+
                 .entreprise-img {
 
-                    width: 50%;
+                    width: 50%
+
+                }
+
+                .entreprise-bloc-text {
+
+                    margin-left: 50px;
+
+                    .entreprise-title {
+
+                        text-align: left;
+                    }
+
+                    .entreprise-text {
+
+                        text-align: left;
+                    }
                 }
             }
-
-            
 
         }
 

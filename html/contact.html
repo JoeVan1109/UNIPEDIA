@@ -10,13 +10,13 @@
     <title>Contact</title>
 </head>
 <body>
-    
-    <!--!--------------------------------- HEADER --------------------------------------->
+
+<!--!--------------------------------- HEADER --------------------------------------->
 
     <header>
 
         <div class="bandeau">
-            <img class="logo-bandeau" src="../asset/logo/logo-longueur.svg" alt="logo-longueur">
+            <img class="logo-bandeau" src="../asset/logo/logo-longueur.svg"  alt="logo-longueur">
         </div>
 
         <div id="mySidenav" class="sidenav">
@@ -26,8 +26,8 @@
 
                 <a href="#">Produit</a>
                 <a href="#">Encyclo'</a>
-                <a href="./contact.html">Contact</a>
-                <a href="./apropos.html">A propos</a>
+                <a href="#">Contact</a>
+                <a href="#">A propos</a>
                 <a href="#">Connexion</a>
 
 
@@ -41,31 +41,35 @@
             </span>
         </a>
 
-        
-
     </header>
+
+<!--!--------------------------------- MAIN --------------------------------------->
     
     <main class="container">
 
-        <h2 class="title-contact">Envie de nous contacter ?</h2>
+        <section class="bloc-contact">
 
-        <div class="bloc-contact">
-
-            <form class="form-contact">
-                <input type="emails" placeholder="Votre email" class="input-email">
-                <input type="file" placeholder="Joindre un fichier" class="input-file">
-                <textarea class="input-message" placeholder="Votre message"></textarea>
-
-                <button class="button" type="submit">Envoyer</button>
-            </form>
-
-
-        </div>
-
-    </main>
+            <h2 class="title-contact">Envie de nous contacter ?</h2>
+        
+            <div class="bloc-form-contact">
+        
+                <form class="form-contact">
+                    <input type="emails" placeholder="Votre email" class="input-email">
+                    <input type="file" placeholder="Joindre un fichier" class="input-file">
+                    <textarea class="input-message" placeholder="Votre message"></textarea>
+        
+                    <div class="btn-link-contact">
+                        <button class="button" type="submit" role="button"><a class="link-btn-product" href="#">Envoyer</a></button>
+                    </div>
+                </form>
+        
+            </div>
+        
+        </section>
 
 <!--!--------------------------------- FOOTER --------------------------------------->
 
+    </main>
 
     <footer class="footer">
 
@@ -101,3 +105,4 @@
 <script src="../JS/navbar.js"></script>
 </body>
 </html>
+

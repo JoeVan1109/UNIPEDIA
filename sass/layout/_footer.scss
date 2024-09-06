@@ -1,11 +1,10 @@
 .footer {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
 
     position: absolute;
-    bottom: 0;
 
     width: 100vw;
     box-sizing: border-box;
@@ -29,15 +28,11 @@
             margin-bottom: 15px;
 
         }
-        .footer-adresse{
-        
-        }
+
         .footer-tel{
             margin: 10px 0 10px 0;
         }
-        .footer-mail{
-        
-        }
+
 
     }
 
@@ -46,8 +41,6 @@
         .footer-logo-mobile {
 
             width: 160px;
-
-            
 
         }
 
@@ -82,13 +75,6 @@
 
         }
 
-        .footer-right-copyright {
-
-            .footer-copyright {
-
-            }
-
-        }
 
     }
 
@@ -98,18 +84,13 @@
         flex-direction: row;
         justify-content: space-between;
 
-        
+        bottom: 0;
 
         .footer-img-logo-mobile {
 
             display: none;
 
-            .footer-logo {
-    
-                
-                
-    
-            }
+
     
         }
 

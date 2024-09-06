@@ -60,52 +60,107 @@
   color: #7469B6;
 }
 
-.grid-bloc-intro {
+.bloc-contact .btn-link-contact {
+  display: flex;
+  justify-content: end;
+}
+.bloc-contact .btn-link-contact .button {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #AD88C6;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-family: "Handlee", cursive;
+  font-size: 20px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.bloc-contact .btn-link-contact .button:after {
+  background-color: #AD88C6;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+.bloc-contact .btn-link-contact .button:hover:after {
+  transform: translate(0, 0);
+}
+.bloc-contact .btn-link-contact .button:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+.bloc-contact .btn-link-contact .button:hover {
+  outline: 0;
+}
+.bloc-contact .btn-link-contact .link-btn-product {
+  text-decoration: none;
+  color: #7469B6;
+}
+
+.grid-bloc-card {
   box-sizing: border-box;
   margin: 30px 25px 25px 25px;
 }
-.grid-bloc-intro .card-intro {
+.grid-bloc-card .card-intro {
   width: 300px;
   background-color: #FFE6E6;
   padding: 20px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.grid-bloc-intro .card-intro .title-card {
+.grid-bloc-card .card-intro .title-card {
   margin-bottom: 20px;
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 20px;
   color: #2B0D73;
 }
-.grid-bloc-intro .card-intro .text-card {
+.grid-bloc-card .card-intro .text-card {
   margin-bottom: 35px;
   text-align: center;
   font-family: "Patrick Hand SC", cursive;
   color: #AD88C6;
 }
-.grid-bloc-intro .card-intro .footer-lien {
+.grid-bloc-card .card-intro .footer-lien {
   display: flex;
   justify-content: end;
 }
-.grid-bloc-intro .card-intro .footer-lien .lien-card {
+.grid-bloc-card .card-intro .footer-lien .lien-card {
   text-decoration: none;
   font-family: "Patrick Hand SC", cursive;
   color: #2B0D73;
 }
 @media screen and (min-width: 768px) {
-  .grid-bloc-intro .card-intro {
+  .grid-bloc-card .card-intro {
     width: 600px;
   }
-  .grid-bloc-intro .card-intro .title-card {
+  .grid-bloc-card .card-intro .title-card {
     font-size: 25px;
   }
-  .grid-bloc-intro .card-intro .text-card {
+  .grid-bloc-card .card-intro .text-card {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .grid-bloc-intro .card-intro {
+  .grid-bloc-card .card-intro {
     width: 300px;
   }
 }
@@ -423,7 +478,6 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 0;
   width: 100vw;
   box-sizing: border-box;
   height: auto;
@@ -462,6 +516,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    bottom: 0;
   }
   .footer .footer-img-logo-mobile {
     display: none;
@@ -595,25 +650,32 @@ header .bandeau .logo-bandeau {
   }
 }
 
-.container .title-contact {
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+body .container .bloc-contact {
+  margin: 10px 10px 50px 10px;
+  box-sizing: border-box;
+}
+body .container .bloc-contact .title-contact {
   margin: 70px 0 40px 0;
   text-align: center;
   font-family: "Handlee", cursive;
   font-size: 25px;
   color: #2B0D73;
 }
-.container .bloc-contact {
+body .container .bloc-contact .bloc-form-contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
 }
-.container .bloc-contact .form-contact {
+body .container .bloc-contact .bloc-form-contact .form-contact {
   display: flex;
   flex-direction: column;
   width: 80%;
 }
-.container .bloc-contact .form-contact .input-email {
+body .container .bloc-contact .bloc-form-contact .form-contact .input-email {
   height: 30px;
   border: none;
   border-radius: 5px;
@@ -621,7 +683,7 @@ header .bandeau .logo-bandeau {
   padding-left: 10px;
   font-family: "Patrick Hand SC", cursive;
 }
-.container .bloc-contact .form-contact .input-file {
+body .container .bloc-contact .bloc-form-contact .form-contact .input-file {
   height: 30px;
   margin: 40px 0 40px 0;
   border: none;
@@ -631,7 +693,7 @@ header .bandeau .logo-bandeau {
   font-family: "Patrick Hand SC", cursive;
   color: grey;
 }
-.container .bloc-contact .form-contact .input-message {
+body .container .bloc-contact .bloc-form-contact .form-contact .input-message {
   height: 100px;
   margin-bottom: 40px;
   border: none;
@@ -640,11 +702,33 @@ header .bandeau .logo-bandeau {
   padding: 10px 0 0 10px;
   font-family: "Patrick Hand SC", cursive;
 }
-.container .bloc-contact .form-contact .button {
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  background-color: #DDCFE8;
+@media screen and (min-width: 768px) {
+  body .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .container .bloc-contact {
+    width: 80%;
+  }
+  body .container .bloc-contact .bloc-form-contact .form-contact .input-email {
+    font-size: 20px;
+  }
+  body .container .bloc-contact .bloc-form-contact .form-contact .input-file {
+    height: 40px;
+    font-size: 20px;
+  }
+  body .container .bloc-contact .bloc-form-contact .form-contact .input-message {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body .container .bloc-contact {
+    width: 50%;
+  }
+  body .container .bloc-contact .title-contact {
+    margin-top: 0;
+  }
 }
 
 body {
@@ -728,12 +812,7 @@ body .container .fleche-up {
 body .container .fleche-up .fleche-up-img {
   width: 60px;
 }
-@media screen and (min-width: 768px) {
-  body .container .ligne-temoignage {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   body .container .bloc-intro .title-bloc-intro {
     font-size: 50px;
   }

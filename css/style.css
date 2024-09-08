@@ -473,58 +473,48 @@
   }
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  width: 100vw;
-  box-sizing: border-box;
+footer .footer {
+  width: 100%;
   height: auto;
+  box-sizing: border-box;
   padding: 25px;
   background-color: #AD88C6;
   color: white;
   font-family: "Patrick Hand SC", cursive;
 }
-.footer .footer-left {
+footer .footer .footer-left {
   text-align: center;
 }
-.footer .footer-left .footer-title {
+footer .footer .footer-left .footer-title {
   margin-bottom: 15px;
 }
-.footer .footer-left .footer-tel {
+footer .footer .footer-left .footer-tel {
   margin: 10px 0 10px 0;
 }
-.footer .footer-img-logo-mobile .footer-logo-mobile {
+footer .footer .footer-img-logo-mobile .footer-logo-mobile {
   width: 160px;
 }
-.footer .footer-img-logo-desktop {
+footer .footer .footer-img-logo-desktop {
   display: none;
 }
-.footer .footer-img-logo-desktop .footer-logo-desktop {
+footer .footer .footer-img-logo-desktop .footer-logo-desktop {
   width: 190px;
 }
-.footer .footer-right .footer-right-network {
+footer .footer .footer-right .footer-right-network {
   text-align: center;
   margin: 25px 0 15px 0;
 }
-.footer .footer-right .footer-right-network .icone-network {
+footer .footer .footer-right .footer-right-network .icone-network {
   width: 30px;
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    bottom: 0;
-  }
-  .footer .footer-img-logo-mobile {
+  footer .footer .footer-img-logo-mobile {
     display: none;
   }
-  .footer .footer-img-logo-desktop {
+  footer .footer .footer-img-logo-desktop {
     display: block;
   }
-  .footer .footer-right .footer-right-network {
+  footer .footer .footer-right .footer-right-network {
     margin-top: 0;
   }
 }
@@ -537,6 +527,19 @@
 }
 @media screen and (min-width: 1200px) {
   .grid-bloc-card {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  place-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0;
   }
@@ -821,9 +824,19 @@ body .container .fleche-up .fleche-up-img {
   }
 }
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
-  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body .container {
+  flex: 1 0 auto;
+  box-sizing: border-box;
 }
 body .container .title-propos {
   font-family: "Handlee", cursive;

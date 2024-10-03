@@ -502,25 +502,6 @@
   font-family: "Patrick Hand SC", cursive;
   color: #7469B6;
 }
-.bloc-card-peluche .card-1 {
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-out;
-}
-.bloc-card-peluche .card-2 {
-  transform: translateX(100%);
-  transition: transform 0.5s ease-out;
-}
-.bloc-card-peluche .card-3 {
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-out;
-}
-.bloc-card-peluche .card-4 {
-  transform: translateX(100%);
-  transition: transform 0.5s ease-out;
-}
-.bloc-card-peluche .card-peluche-active {
-  transform: translateX(0);
-}
 
 footer .footer {
   width: 100%;

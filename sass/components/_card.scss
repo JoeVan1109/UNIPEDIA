@@ -615,30 +615,6 @@
     
     }
 
-    .card-1 {
-        transform: translateX(-100%);
-        transition: transform 0.5s ease-out;
-    }
 
-    .card-2 {
-        transform: translateX(100%);
-        transition: transform 0.5s ease-out;
-    }
-
-    .card-3 {
-        transform: translateX(-100%);
-        transition: transform 0.5s ease-out;
-    }
-
-    .card-4 {
-        transform: translateX(100%);
-        transition: transform 0.5s ease-out;
-    }
-
-    .card-peluche-active {
-
-        transform: translateX(0);
-    
-    }
 }
 

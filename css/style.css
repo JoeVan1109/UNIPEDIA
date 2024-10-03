@@ -615,7 +615,7 @@ header .bandeau .logo-bandeau {
   width: 130px;
   margin: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500px) {
   header {
     width: 100%;
   }

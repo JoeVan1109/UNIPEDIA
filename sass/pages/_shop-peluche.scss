@@ -9,6 +9,20 @@
         border: 2px solid $dark-pink;
     }
 
+    .title-present-peluche {
+
+        text-align: center;
+    
+        font-size: 25px;
+        font-weight: 200;
+    
+        font-family: "Patrick Hand SC", cursive;
+    
+        color: $blue;
+    
+        margin: 40px 20px 40px 20px;
+    }
+
     .banniere-peluche {
 
 
@@ -73,19 +87,6 @@
 
     .present-peluche {
 
-        .title-present-peluche {
-
-            text-align: center;
-        
-            font-size: 25px;
-            font-weight: 200;
-        
-            font-family: "Patrick Hand SC", cursive;
-        
-            color: $blue;
-        
-            margin: 40px 20px 40px 20px;
-        }
 
         .text-present-peluche {
 
@@ -99,5 +100,12 @@
 
             color: $violet;
         }
+    }
+
+    .bloc-card-peluche {
+
+        margin-bottom: 60px;
+
+        
     }
 }

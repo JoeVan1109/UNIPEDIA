@@ -642,3 +642,172 @@
 
 }
 
+.part-1-encyclo {
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-part-1 {
+
+        width: 300px;
+
+        margin-top: 70px;
+
+        .img-part-1 {
+            width: 100%;
+
+            border-radius: 10px;
+        }
+
+
+        .detail-part-1 {
+
+            .title-part-1 {
+                text-align: center;
+        
+                font-family: "Handlee", cursive;
+                font-size: 25px;
+        
+                color: $blue;
+        
+                margin-top: 25px;
+            }
+    
+            
+            .text-part-1 {
+                color: $violet;
+            
+                font-family: "Patrick Hand SC", cursive; 
+            
+                padding: 20px;
+    
+                text-align: center;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .card-part-1 {
+            width: 600px;
+            
+
+            .detail-part-1 {
+
+                .title-part-1 {
+                    font-size: 30px;
+                }
+
+                .text-part-1 {
+                    font-size: 25px;
+                
+                }
+            }
+            
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .card-part-1 {
+
+            width: 80%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            
+
+            .img-part-1 {
+                width: 50%;
+
+                margin: 50px;
+            }
+
+            .detail-part-1 {
+                
+                width: 50%;
+
+                .title-part-1 {
+                    font-size: 40px;
+                }
+
+                .text-part-1 {
+                    text-align: start;
+                }
+            }
+        }
+
+        .card-apparence {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        
+    }
+
+    .sous-card{
+
+        width: 300px;
+        
+        background-color: $pink;
+
+        padding: 20px;
+        margin: 40px 0 60px 0;
+
+        border-radius: 10px;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+        .title-sous-card{
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            font-family: "Handlee", cursive;
+            font-size: 20px;
+            
+
+            color: $blue;
+        }
+        .text-sous-card{
+            margin-bottom: 35px;
+
+            text-align: center;
+
+            font-family: "Patrick Hand SC", cursive; 
+
+            color: $violet;
+        }
+        
+    }
+        
+    @media screen and (min-width: 768px) {
+        .sous-card {
+            width: 600px;
+
+            .title-sous-card {
+                font-size: 25px;
+            }
+
+            .text-sous-card {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .sous-card {
+            width: 80%;
+        }
+
+    }
+
+}
+

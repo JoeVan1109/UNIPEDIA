@@ -516,6 +516,109 @@
   width: 30px;
 }
 
+.part-1-encyclo {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.part-1-encyclo .card-part-1 {
+  width: 300px;
+  margin-top: 70px;
+}
+.part-1-encyclo .card-part-1 .img-part-1 {
+  width: 100%;
+  border-radius: 10px;
+}
+.part-1-encyclo .card-part-1 .detail-part-1 .title-part-1 {
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 25px;
+  color: #2B0D73;
+  margin-top: 25px;
+}
+.part-1-encyclo .card-part-1 .detail-part-1 .text-part-1 {
+  color: #AD88C6;
+  font-family: "Patrick Hand SC", cursive;
+  padding: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .part-1-encyclo .card-part-1 {
+    width: 600px;
+  }
+  .part-1-encyclo .card-part-1 .detail-part-1 .title-part-1 {
+    font-size: 30px;
+  }
+  .part-1-encyclo .card-part-1 .detail-part-1 .text-part-1 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .part-1-encyclo .card-part-1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .part-1-encyclo .card-part-1 .img-part-1 {
+    width: 50%;
+    margin: 50px;
+  }
+  .part-1-encyclo .card-part-1 .detail-part-1 {
+    width: 50%;
+  }
+  .part-1-encyclo .card-part-1 .detail-part-1 .title-part-1 {
+    font-size: 40px;
+  }
+  .part-1-encyclo .card-part-1 .detail-part-1 .text-part-1 {
+    text-align: start;
+  }
+  .part-1-encyclo .card-apparence {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.part-1-encyclo .sous-card {
+  width: 300px;
+  background-color: #FFE6E6;
+  padding: 20px;
+  margin: 40px 0 60px 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.part-1-encyclo .sous-card .title-sous-card {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 20px;
+  color: #2B0D73;
+}
+.part-1-encyclo .sous-card .text-sous-card {
+  margin-bottom: 35px;
+  text-align: center;
+  font-family: "Patrick Hand SC", cursive;
+  color: #AD88C6;
+}
+@media screen and (min-width: 768px) {
+  .part-1-encyclo .sous-card {
+    width: 600px;
+  }
+  .part-1-encyclo .sous-card .title-sous-card {
+    font-size: 25px;
+  }
+  .part-1-encyclo .sous-card .text-sous-card {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .part-1-encyclo .sous-card {
+    width: 80%;
+  }
+}
+
 footer .footer {
   width: 100%;
   height: auto;

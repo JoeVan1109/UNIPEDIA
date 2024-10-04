@@ -30,7 +30,7 @@
         justify-content: center;
         align-items: center;
 
-        .title-product-peluche {
+        .title-banniere {
             position: absolute;
             z-index: 1;
             width: 50%;
@@ -50,7 +50,7 @@
         
             font-family: "Handlee", cursive;
             font-size: 30px;
-            color: white;
+            color: $blue;
         
             
             opacity: 0.8;
@@ -64,7 +64,7 @@
             transition: transform 0.5s ease-out;
         }
 
-        .banniere-img-peluche {
+        .banniere-img {
 
             position: relative;
 

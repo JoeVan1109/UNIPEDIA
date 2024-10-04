@@ -904,7 +904,7 @@ html .container .fleche-up .fleche-up-img, body .container .fleche-up .fleche-up
   justify-content: center;
   align-items: center;
 }
-.container-page-peluche .banniere-peluche .title-product-peluche {
+.container-page-peluche .banniere-peluche .title-banniere {
   position: absolute;
   z-index: 1;
   width: 50%;
@@ -917,14 +917,14 @@ html .container .fleche-up .fleche-up-img, body .container .fleche-up .fleche-up
   border-radius: 100px;
   font-family: "Handlee", cursive;
   font-size: 30px;
-  color: white;
+  color: #2B0D73;
   opacity: 0.8;
   margin: 30px 0 30px 0;
   box-shadow: 0 0 15px rgba(221, 207, 232, 0.3);
   transform: translateX(-100%);
   transition: transform 0.5s ease-out;
 }
-.container-page-peluche .banniere-peluche .banniere-img-peluche {
+.container-page-peluche .banniere-peluche .banniere-img {
   position: relative;
   width: 100%;
   transform: translateX(100%);
@@ -1023,6 +1023,45 @@ html .container .fleche-up .fleche-up-img, body .container .fleche-up .fleche-up
 
 .grid-bloc-card {
   margin-bottom: 80px;
+}
+
+.container-encyclo .banniere-encyclo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-encyclo .banniere-encyclo .title-banniere {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top right, rgb(170, 158, 198), rgb(221, 207, 232));
+  filter: drop-shadow(0 0 10px rgba(170, 158, 198, 0.5));
+  border-radius: 100px;
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 25px;
+  color: #2B0D73;
+  opacity: 0.8;
+  margin: 30px 0 30px 0;
+  box-shadow: 0 0 15px rgba(221, 207, 232, 0.3);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
+}
+.container-encyclo .banniere-encyclo .banniere-img {
+  position: relative;
+  width: 100%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out;
+}
+.container-encyclo .active-title {
+  transform: translateX(0) !important;
+}
+.container-encyclo .active-banniere {
+  transform: translateX(0) !important;
 }
 
 /*# sourceMappingURL=style.css.map */

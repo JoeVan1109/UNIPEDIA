@@ -502,6 +502,19 @@
   font-family: "Patrick Hand SC", cursive;
   color: #7469B6;
 }
+.bloc-card-peluche .card-peluche .bloc-prix-btn {
+  width: 100%;
+  padding: 0 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bloc-card-peluche .card-peluche .bloc-prix-btn .prix-peluche {
+  font-family: "Patrick Hand SC", cursive;
+}
+.bloc-card-peluche .card-peluche .bloc-prix-btn .btn-panier {
+  width: 30px;
+}
 
 footer .footer {
   width: 100%;
@@ -927,6 +940,14 @@ body .container .fleche-up .fleche-up-img {
 }
 .container-page-peluche .bloc-card-peluche {
   margin-bottom: 60px;
+}
+.container-page-peluche .fleche-up {
+  margin: 30px;
+  display: flex;
+  justify-content: end;
+}
+.container-page-peluche .fleche-up .fleche-up-img {
+  width: 60px;
 }
 
 html, body {

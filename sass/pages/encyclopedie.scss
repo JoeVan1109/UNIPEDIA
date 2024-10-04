@@ -1,5 +1,13 @@
 .container-encyclo {
 
+    .ligne-encyclo {
+
+        margin: 5%;
+                
+        width: 90%;
+        border: 2px solid $dark-pink;
+    }
+
     .banniere-encyclo {
 
         display: flex;
@@ -62,9 +70,16 @@
         transform: translateX(0) !important;
     }
 
-    .part-1-encyclo {
+    .fleche-up {
 
-        
+        margin: 30px;
+
+        display: flex;
+        justify-content: end;
+
+        .fleche-up-img {
+            width: 60px;
+        }
     }
     
 }

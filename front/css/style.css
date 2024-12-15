@@ -1081,18 +1081,7 @@ html .container .ligne-intro, body .container .ligne-intro {
   width: 90%;
   border: 2px solid #E1AFD1;
 }
-<<<<<<< HEAD:css/style.css
-body .container .ligne-encyclo {
-=======
-html .container .bloc-encyclo .sous-title-bloc-encyclo, body .container .bloc-encyclo .sous-title-bloc-encyclo {
-  text-align: center;
-  font-family: "Handlee", cursive;
-  font-size: 30px;
-  color: #2B0D73;
-  margin: 50px 0 30px 0;
-}
 html .container .ligne-encyclo, body .container .ligne-encyclo {
->>>>>>> 76f0afbb882689b618382b1a297b9522a30e6676:front/css/style.css
   margin: 5%;
   width: 90%;
   border: 2px solid #E1AFD1;
@@ -1136,13 +1125,8 @@ html .container .fleche-up, body .container .fleche-up {
 html .container .fleche-up .fleche-up-img, body .container .fleche-up .fleche-up-img {
   width: 60px;
 }
-<<<<<<< HEAD:css/style.css
 @media screen and (min-width: 1200px) {
-  body .container .bloc-intro .title-bloc-intro {
-=======
-@media screen and (min-width: 768px) and (min-width: 1200px) {
   html .container .bloc-intro .title-bloc-intro, body .container .bloc-intro .title-bloc-intro {
->>>>>>> 76f0afbb882689b618382b1a297b9522a30e6676:front/css/style.css
     font-size: 50px;
   }
   html .container .bloc-intro .text-bloc-intro, body .container .bloc-intro .text-bloc-intro {

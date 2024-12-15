@@ -179,7 +179,7 @@
   border-radius: 10px;
 }
 .bloc-encyclo .card-encyclo .img-encyclo {
-  width: 100%;
+  width: 90%;
   border-radius: 9px;
 }
 .bloc-encyclo .card-encyclo .text-unicorn-card {
@@ -188,29 +188,38 @@
   padding: 20px;
   text-align: center;
 }
+.bloc-encyclo .card-encyclo {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bloc-encyclo .card-encyclo .img-encyclo {
+  width: 100%;
+  height: 100%;
+}
+.bloc-encyclo .card-encyclo .text-encyclo .sous-title-bloc-encyclo {
+  text-align: center;
+  font-family: "Handlee", cursive;
+  font-size: 30px;
+  color: #2B0D73;
+  margin-top: 50px;
+}
+.bloc-encyclo .card-encyclo .text-encyclo .text-unicorn-card {
+  text-align: start;
+  font-size: 25px;
+}
 @media screen and (min-width: 768px) {
   .bloc-encyclo .card-encyclo {
-    width: 600px;
-  }
-  .bloc-encyclo .card-encyclo .text-unicorn-card {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .bloc-encyclo .card-encyclo {
     width: 80%;
-    display: flex;
     flex-direction: row-reverse;
-    align-items: center;
   }
   .bloc-encyclo .card-encyclo .img-encyclo {
     width: 50%;
   }
-  .bloc-encyclo .card-encyclo .text-encyclo .sous-title-bloc-encyclo {
-    font-size: 50px;
-  }
-  .bloc-encyclo .card-encyclo .text-encyclo .text-unicorn-card {
-    text-align: start;
+  .bloc-encyclo .card-encyclo .text-encyclo {
+    width: 50%;
   }
 }
 
@@ -764,13 +773,6 @@ body .container .ligne-intro {
   width: 90%;
   border: 2px solid #E1AFD1;
 }
-body .container .bloc-encyclo .sous-title-bloc-encyclo {
-  text-align: center;
-  font-family: "Handlee", cursive;
-  font-size: 30px;
-  color: #2B0D73;
-  margin: 50px 0 30px 0;
-}
 body .container .ligne-encyclo {
   margin: 5%;
   width: 90%;
@@ -815,7 +817,7 @@ body .container .fleche-up {
 body .container .fleche-up .fleche-up-img {
   width: 60px;
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   body .container .bloc-intro .title-bloc-intro {
     font-size: 50px;
   }

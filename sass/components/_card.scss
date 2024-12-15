@@ -98,7 +98,7 @@
 
 
         .img-encyclo{
-            width: 100%;
+            width: 90%;
             border-radius: 9px;
         }
         
@@ -115,42 +115,63 @@
         
     }
 
-    @media screen and (min-width: 768px) {
-        .card-encyclo {
-            width: 600px;
+    
+        
+    .card-encyclo {
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        .img-encyclo {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-encyclo {
+
+            .sous-title-bloc-encyclo {
+                
+                text-align: center;
+            
+                font-family: "Handlee", cursive;
+                font-size: 30px;
+            
+                color: $blue;
+            
+                margin-top: 50px;
+            }
 
             .text-unicorn-card {
-                font-size: 20px;
+                text-align: start;
+
+                font-size: 25px;
             }
         }
-    }
 
-    @media screen and (min-width: 1200px) {
-        
-        .card-encyclo {
+        @media screen and (min-width: 768px) {
+
             width: 80%;
 
-            display: flex;
             flex-direction: row-reverse;
-            align-items: center;
-            
 
             .img-encyclo {
                 width: 50%;
             }
-
+    
             .text-encyclo {
 
-                .sous-title-bloc-encyclo {
-                    font-size: 50px;
-                }
-
-                .text-unicorn-card {
-                    text-align: start;
-                }
+                width: 50%;
             }
+
+
+            
         }
     }
+    
 }
 
 .bloc-product {

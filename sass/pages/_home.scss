@@ -53,28 +53,6 @@ body {
         }
 
 
-
-            
-
-
-            
-
-        
-        .bloc-encyclo{
-
-            .sous-title-bloc-encyclo{
-                text-align: center;
-        
-                font-family: "Handlee", cursive;
-                font-size: 30px;
-        
-                color: $blue;
-        
-                margin: 50px 0 30px 0;
-            }
-            
-        }
-
         .ligne-encyclo{
 
             margin: 5%;
@@ -145,11 +123,6 @@ body {
                 width: 60px;
             }
         }
-        
-        @media screen and (min-width: 768px) {
-            .ligne-temoignage {
-                
-            }
 
         @media screen and (min-width: 1200px) {
 
@@ -163,8 +136,6 @@ body {
                     font-size: 30px;
                 }
             }
-        }
-
         }
 
     }

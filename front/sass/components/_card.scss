@@ -1,0 +1,1069 @@
+.grid-bloc-card{
+    box-sizing: border-box;
+
+    
+
+    margin: 30px 25px 25px 25px;
+    
+    .card-intro{
+
+        width: 300px;
+        
+        background-color: $pink;
+
+        padding: 20px;
+
+        border-radius: 10px;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+        .title-card{
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            font-family: "Handlee", cursive;
+            font-size: 20px;
+            
+
+            color: $blue;
+        }
+        .text-card{
+            margin-bottom: 35px;
+
+            text-align: center;
+
+            font-family: "Patrick Hand SC", cursive; 
+
+            color: $violet;
+        }
+        .footer-lien {
+
+            display: flex;
+            justify-content: end;
+
+            .lien-card{
+                text-decoration: none;
+
+                font-family: "Patrick Hand SC", cursive; 
+
+                color: $blue;
+            }
+        }
+    }
+        
+    @media screen and (min-width: 768px) {
+        .card-intro {
+            width: 600px;
+
+            .title-card {
+                font-size: 25px;
+            }
+
+            .text-card {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .card-intro {
+            width: 300px;
+        }
+
+    }
+}
+
+.bloc-encyclo {
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-encyclo {
+    
+        width: 300px;
+
+        margin-bottom: 45px;
+
+        
+
+        border-radius: 10px;
+
+
+
+        .img-encyclo{
+            width: 90%;
+            border-radius: 9px;
+        }
+        
+        .text-unicorn-card{
+        
+            color: $violet;
+        
+            font-family: "Patrick Hand SC", cursive; 
+        
+            padding: 20px;
+
+            text-align: center;
+        }
+        
+    }
+
+    
+        
+    .card-encyclo {
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        .img-encyclo {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-encyclo {
+
+            .sous-title-bloc-encyclo {
+                
+                text-align: center;
+            
+                font-family: "Handlee", cursive;
+                font-size: 30px;
+            
+                color: $blue;
+            
+                margin-top: 50px;
+            }
+
+            .text-unicorn-card {
+                text-align: start;
+
+                font-size: 25px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+
+            width: 80%;
+
+            flex-direction: row-reverse;
+
+            .img-encyclo {
+                width: 50%;
+            }
+    
+            .text-encyclo {
+
+                width: 50%;
+            }
+
+
+            
+        }
+    }
+    
+}
+
+.bloc-product {
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-product {
+
+        width: 300px;
+
+        margin-top: 70px;
+
+        .img-product {
+            width: 100%;
+
+            border-radius: 10px;
+        }
+
+
+        .detail-product {
+
+            .title-product {
+                text-align: center;
+        
+                font-family: "Handlee", cursive;
+                font-size: 25px;
+        
+                color: $blue;
+        
+                margin-top: 25px;
+            }
+    
+            
+            .text-product {
+                color: $violet;
+            
+                font-family: "Patrick Hand SC", cursive; 
+            
+                padding: 20px;
+    
+                text-align: center;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .card-product {
+            width: 600px;
+            
+
+            .detail-product {
+
+                .title-product {
+                    font-size: 30px;
+                }
+
+                .text-product {
+                    font-size: 25px;
+                
+                }
+            }
+            
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .card-product {
+
+            width: 80%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-product {
+                width: 50%;
+
+                margin: 50px;
+            }
+
+            .detail-product {
+                
+                width: 50%;
+
+                .title-product {
+                    font-size: 40px;
+                }
+
+                .text-product {
+                    text-align: start;
+                }
+            }
+        }
+
+        .card-peluche {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .card-vaiselle {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card-the {
+            display: flex;
+            flex-direction: row-reverse;
+
+        }
+    }
+
+}
+
+.bloc-temoignages {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title-temoignage {
+        font-family: "Handlee", cursive;
+        color: $blue;
+        text-align: center;
+        font-size: 25px;
+
+        margin: 25px;
+    }
+
+    .card-temoignage-1 {
+
+        margin: 0 0 50px 0;
+
+        width: 90%;
+
+        .text-temoignage {
+            color: $violet;
+        
+            font-family: "Patrick Hand SC", cursive; 
+        
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            font-size: 20px;
+        }
+
+        .img-temoignage-1 {
+
+            border-radius: 10px;
+
+            width: 100%;
+
+        }
+    }
+    .card-temoignage-2 {
+
+        margin: 0 0 50px 0;
+
+        width: 90%;
+
+        .text-temoignage {
+            color: $violet;
+        
+            font-family: "Patrick Hand SC", cursive; 
+        
+            padding: 20px;
+
+            text-align: center;
+
+            font-size: 20px;
+        }
+
+        .img-temoignage-2 {
+
+            border-radius: 10px;
+
+            width: 100%;
+
+        }
+    }
+    .card-temoignage-3 {
+
+        margin: 0 0 50px 0;
+
+        width: 90%;
+
+        .text-temoignage {
+            color: $violet;
+        
+            font-family: "Patrick Hand SC", cursive; 
+        
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            font-size: 20px;
+        }
+
+        .img-temoignage-3 {
+
+            border-radius: 10px;
+
+            width: 100%;
+
+        }
+
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .title-temoignage {
+            font-size: 30px;
+        }
+
+        .card-temoignage-1 {
+            width: 600px;
+
+            .text-temoignage {
+                font-size: 25px;
+            }
+        }
+
+        .card-temoignage-2 {
+            width: 600px;
+
+            .text-temoignage {
+                font-size: 20px;
+            }
+        }
+
+        .card-temoignage-3 {
+            width: 600px;
+
+            .text-temoignage {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .title-temoignage {
+            font-size: 30px;
+            
+            margin-bottom: 60px;
+        }
+
+        .card-temoignage-1 {
+            width: 70%;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .text-temoignage {
+                text-align: start;
+                font-size: 30px;
+
+                width: 50%;
+            }
+
+            .img-temoignage-1 {
+                width: 50%;
+
+                margin: 25px;
+            }
+        }
+
+        .card-temoignage-2 {
+            width: 70%;
+
+            .text-temoignage {
+                font-size: 30px;
+            }
+        }
+
+        .card-temoignage-3 {
+            width: 70%;
+
+            text-align: start;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .text-temoignage {
+
+                width: 50%;
+
+                text-align: start;
+                font-size: 30px;
+
+            }
+
+            .img-temoignage-3 {
+                width: 50%;
+                margin: 25px;
+            }
+        }
+    }
+}
+
+
+
+.grid-bloc-card {
+
+    .card-equipe{
+
+        width: 300px;
+        
+        background-color: $pink;
+
+        padding: 20px;
+
+        border-radius: 10px;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img-equipe {
+
+            width: 90%;
+
+            border-radius: 10px;
+
+            margin-bottom: 20px;
+            
+        }
+        
+        .title-card{
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            font-family: "Handlee", cursive;
+            font-size: 25px;
+            
+
+            color: $blue;
+        }
+
+        .sous-title-card {
+            text-align: center;
+
+            font-family: "Handlee", cursive;
+
+            color: $dark-violet;
+
+            font-size: 22px;
+
+            margin-bottom: 10px;
+        }
+
+        .text-card{
+            margin-bottom: 35px;
+
+            text-align: center;
+
+            font-family: "Patrick Hand SC", cursive; 
+
+            color: $violet;
+        }
+        .footer-lien {
+
+            display: flex;
+            justify-content: end;
+
+            .lien-card{
+                text-decoration: none;
+
+                font-family: "Patrick Hand SC", cursive; 
+
+                color: $blue;
+            }
+        }
+    }
+        
+    @media screen and (min-width: 768px) {
+        .card-equipe {
+            width: 600px;
+
+            .title-card {
+                font-size: 25px;
+            }
+
+            .text-card {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .card-equipe {
+            width: 300px;
+        }
+
+    }
+}
+
+.bloc-card-peluche {
+
+    .card-peluche {
+
+        width: 300px;
+        
+        background-color: $pink;
+
+        padding: 20px;
+
+        border-radius: 10px;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .img-peluche {
+
+            width: 90%;
+
+            border-radius: 10px;
+
+            margin-bottom: 20px;
+            
+        }
+        
+        .title-card{
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            font-family: "Patrick Hand SC", cursive;
+            font-weight: 400;
+            font-size: 25px;
+            
+
+            color: $blue;
+        }
+
+        .text-card{
+            margin-bottom: 35px;
+
+            text-align: center;
+
+            font-family: "Patrick Hand SC", cursive; 
+
+            color: $dark-violet;
+        }
+
+        .bloc-prix-btn {
+
+            width: 100%;
+
+            padding: 0 30px 0 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .prix-peluche {
+
+                font-family: "Patrick Hand SC", cursive;
+            }
+
+            .btn-panier {
+
+                width: 30px;
+            }
+
+                
+
+        }
+    
+    }
+
+
+}
+
+.part-1-encyclo {
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-part-1 {
+
+        width: 400px;
+
+        margin-top: 70px;
+
+        .img-part-1 {
+            width: 100%;
+
+            border-radius: 10px;
+        }
+
+
+        .detail-part-1 {
+
+            .title-part-1 {
+                text-align: center;
+        
+                font-family: "Handlee", cursive;
+                font-size: 25px;
+        
+                color: $blue;
+        
+                margin-top: 25px;
+            }
+    
+            
+            .text-part-1 {
+                color: $violet;
+            
+                font-family: "Patrick Hand SC", cursive; 
+            
+                padding: 20px;
+    
+                text-align: center;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .card-part-1 {
+            width: 600px;
+            
+
+            .detail-part-1 {
+
+                .title-part-1 {
+                    font-size: 30px;
+                }
+
+                .text-part-1 {
+                    font-size: 25px;
+                
+                }
+            }
+            
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .card-part-1 {
+
+            width: 80%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            
+
+            .img-part-1 {
+                width: 50%;
+
+                margin: 50px;
+            }
+
+            .detail-part-1 {
+                
+                width: 50%;
+
+                .title-part-1 {
+                    font-size: 40px;
+                }
+
+                .text-part-1 {
+                    text-align: start;
+                }
+            }
+        }
+
+        .card-apparence {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        
+    }
+
+    .sous-card{
+
+        width: 300px;
+        
+        background-color: $pink;
+
+        padding: 20px;
+        margin-top: 40px;
+
+        border-radius: 10px;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+        .title-sous-card{
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            font-family: "Handlee", cursive;
+            font-size: 20px;
+            
+
+            color: $blue;
+        }
+        .text-sous-card{
+            margin-bottom: 35px;
+
+            text-align: center;
+
+            font-family: "Patrick Hand SC", cursive; 
+
+            color: $violet;
+        }
+        
+    }
+        
+    @media screen and (min-width: 768px) {
+        .sous-card {
+            width: 600px;
+
+            .title-sous-card {
+                font-size: 25px;
+            }
+
+            .text-sous-card {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .sous-card {
+            width: 80%;
+        }
+
+    }
+
+}
+
+.part-2-encyclo {
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-part-2 {
+
+        width: 400px;
+
+        margin-top: 70px;
+
+        .img-part-2 {
+            width: 100%;
+
+            border-radius: 10px;
+        }
+
+
+        .detail-part-2 {
+
+            .title-part-2 {
+                text-align: center;
+        
+                font-family: "Handlee", cursive;
+                font-size: 25px;
+        
+                color: $blue;
+        
+                margin-top: 25px;
+            }
+    
+            
+            .text-part-2 {
+                color: $violet;
+            
+                font-family: "Patrick Hand SC", cursive; 
+            
+                padding: 20px;
+    
+                text-align: center;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .card-part-2 {
+            width: 600px;
+            
+
+            .detail-part-2 {
+
+                .title-part-2 {
+                    font-size: 30px;
+                }
+
+                .text-part-2 {
+                    font-size: 25px;
+                
+                }
+            }
+            
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .card-part-2 {
+
+            width: 80%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            
+
+            .img-part-2 {
+                width: 50%;
+
+                margin: 50px;
+            }
+
+            .detail-part-2 {
+                
+                width: 50%;
+
+                .title-part-2 {
+                    font-size: 40px;
+                }
+
+                .text-part-2 {
+                    text-align: start;
+                }
+            }
+        }
+
+        .card-apparence {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        
+    }
+
+}
+
+.part-3-encyclo {
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card-part-3 {
+
+        width: 400px;
+
+        margin-top: 70px;
+
+
+
+
+        .detail-part-3 {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .title-part-3 {
+                text-align: center;
+        
+                font-family: "Handlee", cursive;
+                font-size: 25px;
+        
+                color: $blue;
+        
+                margin-top: 25px;
+            }
+    
+            
+            .text-part-3 {
+                color: $violet;
+            
+                font-family: "Patrick Hand SC", cursive; 
+            
+                padding: 20px;
+    
+                text-align: center;
+            }
+
+            .img-part-3 {
+                width: 100%;
+                margin: 20px 0 50px 0;
+
+                border-radius: 10px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .card-part-3 {
+            width: 600px;
+            
+
+            .detail-part-3 {
+
+                .title-part-3 {
+                    font-size: 30px;
+                }
+
+                .text-part-3 {
+                    font-size: 25px;
+                
+                }
+
+                .img-part-3 {
+                    width: 100%;
+                    margin: 20px 0 50px 0;
+                }
+            }
+            
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .card-part-3 {
+
+            width: 80%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            
+
+            
+
+            .detail-part-3 {
+                
+                width: 100%;
+
+                .title-part-3 {
+                    font-size: 40px;
+                }
+
+                .text-part-3 {
+                    text-align: start;
+                }
+
+                .img-part-3 {
+                    width: 100%;
+                    margin: 20px 0 50px 0;
+                }
+            }
+        }
+
+        .card-apparence {
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+    }
+
+}

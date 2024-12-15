@@ -1,0 +1,123 @@
+.container-page-peluche {
+
+
+    .ligne-peluche {
+
+        margin: 5%;
+        
+        width: 90%;
+        border: 2px solid $dark-pink;
+    }
+
+    .title-present-peluche {
+
+        text-align: center;
+    
+        font-size: 25px;
+        font-weight: 200;
+    
+        font-family: "Patrick Hand SC", cursive;
+    
+        color: $blue;
+    
+        margin: 40px 20px 40px 20px;
+    }
+
+    .banniere-peluche {
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .title-banniere {
+            position: absolute;
+            z-index: 1;
+            width: 50%;
+            height: 2.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            
+            background: linear-gradient(to top right, rgba(170, 158, 198, 1), rgba(221, 207, 232, 1));
+        
+    
+            filter: drop-shadow(0 0 10px rgba(170, 158, 198, 0.5));
+        
+            
+            border-radius: 100px;
+        
+            font-family: "Handlee", cursive;
+            font-size: 30px;
+            color: $blue;
+        
+            
+            opacity: 0.8;
+        
+            margin: 30px 0 30px 0;
+        
+            
+            box-shadow: 0 0 15px rgba(221, 207, 232, 0.3);
+
+            transform: translateX(-100%);
+            transition: transform 0.5s ease-out;
+        }
+
+        .banniere-img {
+
+            position: relative;
+
+            width: 100%;
+
+            transform: translateX(100%);
+            transition: transform 0.5s ease-out;
+        }
+    }
+    
+
+    .active-title {
+        transform: translateX(0) !important;
+    }
+
+    .active-banniere {
+        transform: translateX(0) !important;
+    }
+
+
+    .present-peluche {
+
+
+        .text-present-peluche {
+
+            font-size: 20px;
+
+            margin: 30px;
+
+            text-align: center;
+
+            font-family: "Patrick Hand SC", cursive; 
+
+            color: $violet;
+        }
+    }
+
+    .bloc-card-peluche {
+
+        margin-bottom: 60px;
+
+        
+    }
+
+    .fleche-up {
+
+        margin: 30px;
+
+        display: flex;
+        justify-content: end;
+
+        .fleche-up-img {
+            width: 60px;
+        }
+    }
+}

@@ -53,6 +53,7 @@
     }
         
     @media screen and (min-width: 768px) {
+
         .card-intro {
             width: 600px;
 
@@ -160,6 +161,7 @@
 
             .img-encyclo {
                 width: 50%;
+                box-sizing: border-box;
             }
     
             .text-encyclo {

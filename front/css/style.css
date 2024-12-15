@@ -217,6 +217,7 @@
   }
   .bloc-encyclo .card-encyclo .img-encyclo {
     width: 50%;
+    box-sizing: border-box;
   }
   .bloc-encyclo .card-encyclo .text-encyclo {
     width: 50%;

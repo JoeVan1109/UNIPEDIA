@@ -929,7 +929,18 @@ header .bandeau .logo-bandeau {
 }
 @media screen and (min-width: 1500px) {
   header {
+    transition: all 0.6s ease;
+    background-color: #FFE6E6;
+    position: fixed !important;
     width: 100%;
+  }
+  header .navbar-scrolled {
+    background-color: rgba(255, 230, 230, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
   }
   header .bandeau {
     display: flex;
@@ -942,7 +953,6 @@ header .bandeau .logo-bandeau {
     width: auto;
     position: static;
     height: 60px;
-    right: auto;
     display: flex;
     justify-content: flex-end;
     padding: 30px 30px 0 0;
@@ -1055,6 +1065,9 @@ html, body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+html .container, body .container {
+  margin-top: 90px;
 }
 html .container .bloc-intro, body .container .bloc-intro {
   margin: 10px;
